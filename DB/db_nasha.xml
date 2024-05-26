@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: May 14, 2023 at 02:25 PM
+- Server version: 10.4.27-MariaDB
+- PHP Version: 8.2.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="db_nasha" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="tb_add">
+                CREATE TABLE `tb_add` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `date` date NOT NULL,
+                  `place` varchar(100) NOT NULL,
+                  `message` varchar(200) NOT NULL,
+                  `reg_member` int(5) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="tb_info">
+                CREATE TABLE `tb_info` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `name` varchar(50) NOT NULL,
+                  `email` varchar(50) NOT NULL,
+                  `message` varchar(100) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+            <pma:table name="tb_login">
+                CREATE TABLE `tb_login` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(20) NOT NULL,
+                  `password` varchar(10) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'db_nasha'
+    -->
+    <database name="db_nasha">
+        <!-- Table tb_add -->
+        <table name="tb_add">
+            <column name="id">1</column>
+            <column name="date">2023-05-24</column>
+            <column name="place">sangamner</column>
+            <column name="message">About side-effect of alcohol</column>
+            <column name="reg_member">2</column>
+        </table>
+        <!-- Table tb_info -->
+        <table name="tb_info">
+            <column name="id">1</column>
+            <column name="name">manthan</column>
+            <column name="email">manthan2003@gmail</column>
+            <column name="message">hi hello how</column>
+        </table>
+        <!-- Table tb_login -->
+        <table name="tb_login">
+            <column name="id">1</column>
+            <column name="username">manthan</column>
+            <column name="password">12345</column>
+        </table>
+        <table name="tb_login">
+            <column name="id">2</column>
+            <column name="username">vishwa</column>
+            <column name="password">12345</column>
+        </table>
+        <table name="tb_login">
+            <column name="id">3</column>
+            <column name="username">pradnya</column>
+            <column name="password">12345</column>
+        </table>
+        <table name="tb_login">
+            <column name="id">4</column>
+            <column name="username">sakshi</column>
+            <column name="password">12345</column>
+        </table>
+    </database>
+</pma_xml_export>
